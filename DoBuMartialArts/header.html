@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="/style/style.css">
+<div id="header">
+    <img src="/images/imagelogo.png" alt="This is logo">
+        <a href="#" class="logo">DoBu Martial Arts</a>
+        <nav class="navbar">
+         <ul id="navbar">
+         <li><a href="index.html">Home</a></li>
+         <li> <a href="about.html">About</a></li>
+         <li class="dropdownbtn"><a href="courses.html">Courses</a>
+            <div class="sub-menu">
+                <ul>
+                    <li><a href="muaythai.html">Muay Thai</a></li>
+                    <li><a href="judo.html">Judo</a></li>
+                    <li><a href="jiu-jitsu.html">jiu-jitsu</a></li>
+                    <li><a href="karate.html">Karate</a></li>
+                    <li><a href="kidmartialart.html">Kids</a></li>
+                </ul>
+            </div>
+        </li>
+         <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+            
+  </ul>      
+    </nav> 
+   
+    <div class="icons">
+        <button id="showForm">Register Now</button>
+    </div>
+</div>
+    <div id="signupForm" class="signup-hidden">
+        <div class="signup-container">
+            <form action="#">
+                <div class="signup-title">Registration</div>
+                <div class="user-detail">
+                    <div class="signup-box">
+                       <span class="signup-detail">First Name</span>
+                       <input type="text" placeholder="Enter Your First Name" required>
+                    </div>
+                    <div class="signup-box">
+                        <span class="signup-detail">Last Name</span>
+                        <input type="text" placeholder="Enter Your Last Name" required>
+                     </div>
+                     <div class="signup-box">
+                        <span class="signup-detail">Email</span>
+                        <input type="text" placeholder="Enter Your Email" required>
+                     </div>
+                     <div class="signup-box">
+                        <span class="signup-detail">Phone Number</span>
+                        <input type="text" placeholder="Enter Your Phone Number" required>
+                     </div>
+                     <div class="signup-box">
+                        <span class="signup-detail">Street's Name</span>
+                        <input type="text" placeholder="Enter Your Street's Name" required>
+                     </div>
+                     <div class="signup-box">
+                        <span class="signup-detail">City</span>
+                        <input type="text" placeholder="Enter Your City" required>
+                     </div>
+                </div>
+                <div class="gender-detail">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="gender-category">
+                        <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                          <span class="dot two"></span>
+                          <span class="gender">female</span>
+                        </label>
+                       <label for="dot-3">
+                          <span class="dot three"></span>
+                          <span class="gender">Other</span>
+                      </label>
+
+                    </div>
+                </div>
+                <div class="reg-button">
+                    <button type="submit" value="Register" onclick="openPopup()">Register</button>
+                    <button id="closeForm" class="close-form">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="reg-popup" id="reg-popup">
+        <i class="fa-regular fa-circle-check"></i>
+        <h2>Thank You!</h2>
+        <p>Your informations have been successfully submitted. Thanks! </p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
